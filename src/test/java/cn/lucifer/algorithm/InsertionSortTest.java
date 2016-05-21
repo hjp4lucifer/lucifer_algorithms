@@ -8,14 +8,10 @@ import org.junit.Test;
 
 public class InsertionSortTest extends BaseTest {
 
-	protected int[] array;
-
 	protected InsertionSort insertionSort = new InsertionSort();
 
 	@Before
 	public void setUp() throws Exception {
-		array = generateArray(20);
-		printlnJson(array);
 	}
 
 	@After
@@ -24,6 +20,8 @@ public class InsertionSortTest extends BaseTest {
 
 	@Test
 	public void testBaseSort() {
+		int[] array = generateArray(20);
+		printlnJson(array);
 		insertionSort.baseSort(array);
 		printlnJson(array);
 	}
