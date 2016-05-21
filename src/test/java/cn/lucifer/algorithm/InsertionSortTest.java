@@ -22,7 +22,7 @@ public class InsertionSortTest extends BaseTest {
 	public void testBaseSort() {
 		int[] array = generateArray(20);
 		printlnJson(array);
-		insertionSort.baseSort(array);
+		insertionSort.sort(array);
 		printlnJson(array);
 	}
 
