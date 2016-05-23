@@ -11,7 +11,7 @@ public class BaseTest {
 	protected int[] generateArray(int size) {
 		int[] array = new int[size];
 		for (int i = 0; i < size; i++) {
-			array[i] = (int) (Math.random() * 1000);
+			array[i] = (int) (Math.random() * 100000);
 		}
 		return array;
 	}
