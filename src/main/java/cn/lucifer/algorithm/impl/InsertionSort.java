@@ -1,7 +1,10 @@
-package cn.lucifer.algorithm;
+package cn.lucifer.algorithm.impl;
 
-public class InsertionSort {
+import cn.lucifer.algorithm.SortBase;
 
+public class InsertionSort extends SortBase{
+
+	@Override
 	public void sort(int[] array) {
 		for (int j = 1, len = array.length; j < len; j++) {
 			int key = array[j];
