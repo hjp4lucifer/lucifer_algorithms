@@ -20,9 +20,6 @@ public class CombinationTest {
 	public void testAllCombinations() {
 		String array[] = { "胸", "手", "腹", "小腿", "大腿", "臀部" };
 		String[][] r = new Combination().allCombinations(array);
-		if (true) {
-			return;
-		}
 		String[] item;
 		for (int i = 1, ilen = r.length; i < ilen; i++) {
 			item = r[i];
