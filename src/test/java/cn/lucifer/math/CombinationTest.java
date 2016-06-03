@@ -17,9 +17,25 @@ public class CombinationTest {
 	}
 
 	@Test
-	public void testPrintAllCombinations() {
+	public void testAllCombinations() {
 		String array[] = { "胸", "手", "腹", "小腿", "大腿", "臀部" };
-		new Combination().printAllCombinations(array);
+		String[][] r = new Combination().allCombinations(array);
+		if (true) {
+			return;
+		}
+		String[] item;
+		for (int i = 1, ilen = r.length; i < ilen; i++) {
+			item = r[i];
+			System.out.print(i + "\t");
+			for (int j = 0, jlen = item.length; j < jlen; j++) {
+				if (null == item[j]) {
+					System.out.print("　\t");
+				} else {
+					System.out.print(item[j] + "\t");
+				}
+			}
+			System.out.println();
+		}
 	}
 
 }
