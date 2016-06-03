@@ -2,6 +2,7 @@ package cn.lucifer.math;
 
 import static org.junit.Assert.*;
 
+import org.apache.commons.lang.text.StrBuilder;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,21 +19,23 @@ public class CombinationTest {
 
 	@Test
 	public void testAllCombinations() {
-		String array[] = { "胸", "手", "腹", "小腿", "大腿", "臀部" };
+		String array[] = { "胸", "手", "腹", "小腿", "大腿", "臀部", "背" };
 		String[][] r = new Combination().allCombinations(array);
 		String[] item;
+		StrBuilder builder = new StrBuilder(1024);
 		for (int i = 1, ilen = r.length; i < ilen; i++) {
 			item = r[i];
-			System.out.print(i + "\t");
+			builder.append(i).append("\t");
 			for (int j = 0, jlen = item.length; j < jlen; j++) {
 				if (null == item[j]) {
-					System.out.print("　\t");
+					builder.append("　\t");
 				} else {
-					System.out.print(item[j] + "\t");
+					builder.append(item[j]).append("\t");
 				}
 			}
-			System.out.println();
+			builder.append("\n");
 		}
+		System.out.println(builder.toString());
 	}
 
 }
