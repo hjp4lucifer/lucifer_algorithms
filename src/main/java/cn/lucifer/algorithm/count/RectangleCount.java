@@ -25,9 +25,9 @@ public class RectangleCount {
 
 						array[index++] = r;
 						
-						if (index >= count) {
-							return array;
-						}
+//						if (index >= count) {
+//							return array;
+//						}
 					}
 				}
 			}
