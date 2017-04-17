@@ -19,7 +19,7 @@ public class CombinationTest {
 
 	@Test
 	public void testAllCombinations() {
-		String array[] = { "胸", "手", "腹", "小腿", "大腿", "臀部", "背" };
+		String array[] = { "全身", "腿部", "腹部", "手臂", "胸背", "臀部" };
 		String[][] r = new Combination().allCombinations(array);
 		String[] item;
 		StrBuilder builder = new StrBuilder(1024);
