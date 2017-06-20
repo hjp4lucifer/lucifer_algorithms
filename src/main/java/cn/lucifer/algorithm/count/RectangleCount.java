@@ -1,9 +1,5 @@
 package cn.lucifer.algorithm.count;
 
-import java.util.ArrayList;
-
-import org.junit.Test;
-
 /**
  * 方形数量
  * 
@@ -24,10 +20,10 @@ public class RectangleCount {
 						Rectangle r = new Rectangle(x, x2, y, y2);
 
 						array[index++] = r;
-						
-//						if (index >= count) {
-//							return array;
-//						}
+
+						// if (index >= count) {
+						// return array;
+						// }
 					}
 				}
 			}
