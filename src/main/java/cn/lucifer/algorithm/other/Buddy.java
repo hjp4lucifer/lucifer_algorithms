@@ -4,6 +4,9 @@ import java.util.LinkedList;
 
 /**
  * 在操作系统内存管理中，为了避免产生过多的内存碎片，经常使用伙伴算法对内存进行管理，请实现伙伴算法，并提供内存分配与释放的方法。
+ * <p>
+ * 未校验结果
+ * </p>
  * 
  * @author Lucifer
  *
@@ -57,7 +60,7 @@ public class Buddy {
 					for (int j = 0; j < count; j++) {
 						p2 = p2 << j;
 						freePages.add(i++, p2);
-						
+
 					}
 
 					return true;
